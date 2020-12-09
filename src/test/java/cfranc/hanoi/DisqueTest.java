@@ -17,7 +17,14 @@ public class DisqueTest {
 		Disque grand = new Disque(3);
 		assertEquals(-1, petit.compareTo(moyen));
 		assertEquals(-1, moyen.compareTo(grand));
+		assertEquals(-1, petit.compareTo(grand));
 		//TODO : à compléter
+		assertEquals(1, grand.compareTo(moyen));
+		assertEquals(1, moyen.compareTo(petit));
+		assertEquals(1, grand.compareTo(petit));
+		assertEquals(0, petit.compareTo(petit));
+		assertEquals(0, moyen.compareTo(moyen));
+		assertEquals(0, grand.compareTo(grand));
 	}
 
 	@Test
