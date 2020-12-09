@@ -9,7 +9,6 @@ public class TourTest {
 	
 	Disque d1 = new Disque(1);
 	Disque d3 = new Disque(3);
-	Disque d2 = new Disque(2);
 	
 	
 	@Test
